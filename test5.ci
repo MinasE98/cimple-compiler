@@ -1,0 +1,20 @@
+program test5
+	# declarations #
+	declare sum;
+	declare counter;
+	declare result;
+	function DoWork()
+	{
+		return(result/counter);
+	}
+	# main #
+	{
+		counter := 0;
+		input(sum);
+		while (not[counter=sum])
+		{
+			result := result + counter;
+			counter := counter+1;
+		};
+		print(DoWork());
+	}.

@@ -1,0 +1,16 @@
+program count
+	declare x,z,q;
+	{
+		z:=3;
+		x:=4;
+		q:=1;
+		switchcase
+			case(z>x){
+				q:=q*2;
+				print(q);
+			}
+			default{
+				q:=q+2;
+				print(q);
+			};
+	}.

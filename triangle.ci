@@ -1,0 +1,18 @@
+program triangle
+	declare x,y,z ;
+	function Area(in a , in b, inout c)
+		declare a,b,c;
+		{
+			c:=a*b/2;
+			return(c);
+		}	
+	#Main#
+	{
+		if(not[x<1] and not[y<1]){
+			call Area(in x,in y,inout z );
+			print (z); #area of triangle#
+		}
+		else{
+			print(x);	#impossible triangle#	
+		};
+	}.

@@ -1,0 +1,37 @@
+program test6
+	# declarations #
+	declare apousies;
+	declare vathmosproodou1;
+	declare vathmosproodou2;
+	declare vathmosproodon;
+	declare vathmosexetasis;
+	declare vathmosergastiriou;
+	declare telikos;
+	# main #
+	{
+		input(apousies);
+		input(vathmosexetasis);
+		input(vathmosproodou1);
+		input(vathmosproodou2);
+		if (apousies = 0)
+		{
+			vathmosergastiriou := 10;
+		};
+		if (apousies=1)
+		{
+			vathmosergastiriou := 5;
+		}
+		else
+		{
+			vathmosergastiriou :=0;
+		};
+		vathmosproodon := vathmosproodou1+vathmosproodou2/2;
+		if(vathmosergastiriou >= 5 and vathmosproodon>=4 and vathmosexetasis >=5){
+			telikos := vathmosergastiriou + vathmosexetasis / 2;
+			print(telikos);
+		}
+		else
+		{
+			print(-1);
+		};
+	}.
